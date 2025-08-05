@@ -11,14 +11,16 @@ define(
     function (Component) {
         'use strict';
 
-        return Component.extend({
-            defaults: {
-                template: 'Ecpay_BnplPaymentGateway/payment/form'
-            },
+        return Component.extend(
+            {
+                defaults: {
+                    template: 'Ecpay_BnplPaymentGateway/payment/form'
+                },
 
-            getCode: function() {
-                return 'ecpay_bnpl_gateway';
+                getCode: function () {
+                    return 'ecpay_bnpl_gateway';
+                }
             }
-        });
+        );
     }
 );
